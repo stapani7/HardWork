@@ -8,7 +8,7 @@
   </section>
 
   <section id="produtos" class="products-section">
-    <h2>Nossos Produtos</h2>
+    <h2>Lista de Produtos</h2>
     <div class="products-grid">
       <div class="product-card" *ngFor="let produto of produtos">
         <img [src]="produto.imagem || 'assets/img/placeholder.png'" alt="{{ produto.nome }}">
