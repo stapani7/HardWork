@@ -45,4 +45,10 @@ export class CartService {
   toggleModal() {
     this.modalOpenSubject.next(!this.modalOpenSubject.value);
   }
+
+  // ✅ Limpa todo o carrinho
+  limparCarrinho() {
+    this.cartItems = [];
+    this.cartSubject.next(this.cartItems);
+  }
 }

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule, NgForOf, AsyncPipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+
 import { ProdutoService, Produto } from '../../services/produto.service';
 import { CartService } from '../../services/cart.service';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +21,8 @@ export class Home implements OnInit {
 
   constructor(
     private produtoService: ProdutoService,
-    public cartService: CartService
+    public cartService: CartService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -50,5 +53,13 @@ export class Home implements OnInit {
 
   toggleModal(): void {
     this.cartService.toggleModal();
+  }
+
+  finalizarCompra(): void {
+    // Fecha o modal do carrinho
+    this.cartService.fecharModal();
+
+    // Navega para a página de checkout
+    this.router.navigate(['/checkout']);
   }
 }

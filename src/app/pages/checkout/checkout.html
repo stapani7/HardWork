@@ -1,0 +1,31 @@
+<main class="checkout-container">
+  <h1>Finalização de Compra</h1>
+
+  <section class="cart-summary">
+    <h2>Resumo do Carrinho</h2>
+    <div class="cart-item" *ngFor="let item of cartItems">
+      <img [src]="item.imagem || 'assets/img/placeholder.png'" alt="{{ item.nome }}">
+      <div class="cart-item-info">
+        <h4>{{ item.nome }}</h4>
+        <p>R$ {{ item.preco | number:'1.2-2' }}</p>
+      </div>
+    </div>
+    <div class="cart-total">
+      <span>Total:</span>
+      <span>R$ {{ totalValor | number:'1.2-2' }}</span>
+    </div>
+  </section>
+
+  <section class="checkout-form">
+    <h2>Endereço</h2>
+    <input type="text" placeholder="CEP" [(ngModel)]="cep" name="cep">
+
+    <h2>Pagamento</h2>
+    <div class="payment-option">
+      <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" [(ngModel)]="pagamento" checked>
+      <label for="dinheiro">Dinheiro (Pagar na entrega)</label>
+    </div>
+
+    <button class="confirm-btn" (click)="confirmarCompra()">Confirmar Compra</button>
+  </section>
+</main>

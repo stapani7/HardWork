@@ -39,7 +39,9 @@
           <span>Total:</span>
           <span>R$ {{ totalValor | number:'1.2-2' }}</span>
         </div>
-        <a href="Sucesso.html" class="checkout-link">Finalizar Compra</a>
+        <button class="checkout-link" (click)="finalizarCompra()">Finalizar Compra</button>
+
+
       </div>
       <ng-template #emptyCart>
         <p>O carrinho está vazio.</p>

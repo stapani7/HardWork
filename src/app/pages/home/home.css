@@ -617,3 +617,25 @@ body {
 .checkout-link:hover {
     background-color: #45a049;
 }
+
+.quantity-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.cart-item-controls span {
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
