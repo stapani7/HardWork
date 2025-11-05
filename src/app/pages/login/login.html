@@ -1,1 +1,11 @@
-<p>login works!</p>
+<div class="login-container">
+  <h2>Entrar</h2>
+  <form (ngSubmit)="fazerLogin()">
+    <input type="text" placeholder="Usuário" [(ngModel)]="username" name="username" required>
+    <input type="password" placeholder="Senha" [(ngModel)]="password" name="password" required>
+
+    <button type="submit">Entrar</button>
+
+    <p class="erro" *ngIf="error">{{ error }}</p>
+  </form>
+</div>

@@ -63,3 +63,26 @@
 .nav-list a:hover {
     color: #0044ff;
 }
+
+.logout-btn {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+}
+
+.logout-btn:hover {
+  background-color: #c62828;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(229, 57, 53, 0.3);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
