@@ -3,11 +3,11 @@
     <div class="banner-content">
       <h1>Alcance Seus Objetivos</h1>
       <p>Encontre os melhores suplementos para sua saúde e performance.</p>
-      <a href="#produtos" class="cta-button">Ver Produtos</a>
+        <a (click)="scrollToProducts()" class="cta-button">Ver Produtos</a>
     </div>
   </section>
 
-  <section id="produtos" class="products-section">
+  <section id="produtos" #produtosSection class="products-section"> 
     <h2>Lista de Produtos</h2>
     <div class="products-grid">
       <div class="product-card" *ngFor="let produto of produtos">

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core'; // ⬅️ ADICIONE: ViewChild e ElementRef
 import { CommonModule, NgForOf, AsyncPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -14,10 +14,13 @@ import { CartService } from '../../services/cart.service';
   styleUrls: ['./home.css']
 })
 export class Home implements OnInit {
+  @ViewChild('produtosSection') produtosSection!: ElementRef; // ⬅️ REFERÊNCIA DO ELEMENTO
+
   produtos: Produto[] = [];
   cartItems: Produto[] = [];
   totalValor = 0;
   modalAberto = false;
+
 
   constructor(
     private produtoService: ProdutoService,
@@ -61,5 +64,17 @@ export class Home implements OnInit {
 
     // Navega para a página de checkout
     this.router.navigate(['/checkout']);
+  }
+
+  /**
+   * Função que executa a rolagem suave para a seção de produtos.
+   */
+  scrollToProducts(): void {
+    if (this.produtosSection && this.produtosSection.nativeElement) {
+      this.produtosSection.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   }
 }

@@ -1,46 +1,25 @@
 {
   "produtos": [
     {
-      "id": "281d",
+      "id": "135b",
       "nome": "Whey",
       "preco": 120,
-      "descricao": "Whey protein",
-      "imagem": "https://melhoresproteinas.com.br/wp-content/uploads/2025/08/melhor-whey-protein-para-emagrecer-guia.webp"
+      "descricao": "Whey Protein",
+      "imagem": "https://tse2.mm.bing.net/th/id/OIP.DLKuO0NZWnCl-VkHlrFTqgHaEJ?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
-      "id": "e52e",
-      "nome": "Whey 2",
-      "preco": 121,
-      "descricao": "Whey protein 2",
-      "imagem": "https://melhoresproteinas.com.br/wp-content/uploads/2025/08/melhor-whey-protein-para-emagrecer-guia.webp"
+      "id": "6ceb",
+      "nome": "Whey",
+      "preco": 120,
+      "descricao": "Whey Protein",
+      "imagem": "https://tse2.mm.bing.net/th/id/OIP.DLKuO0NZWnCl-VkHlrFTqgHaEJ?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
-      "id": "7881",
-      "nome": "Whey 3",
-      "preco": 122,
-      "descricao": "Whey protein 3",
-      "imagem": "https://melhoresproteinas.com.br/wp-content/uploads/2025/08/melhor-whey-protein-para-emagrecer-guia.webp"
-    },
-    {
-      "id": "1d71",
-      "nome": "Whey 4",
-      "preco": 123,
-      "descricao": "Whey protein 4",
-      "imagem": "https://melhoresproteinas.com.br/wp-content/uploads/2025/08/melhor-whey-protein-para-emagrecer-guia.webp"
-    },
-    {
-      "id": "f288",
-      "nome": "Whey 5",
-      "preco": 124,
-      "descricao": "Whey protein 5",
-      "imagem": "https://melhoresproteinas.com.br/wp-content/uploads/2025/08/melhor-whey-protein-para-emagrecer-guia.webp"
-    },
-    {
-      "id": "d651",
-      "nome": "Whey 6",
-      "preco": 125,
-      "descricao": "Whey protein 6",
-      "imagem": "https://melhoresproteinas.com.br/wp-content/uploads/2025/08/melhor-whey-protein-para-emagrecer-guia.webp"
+      "id": "2e75",
+      "nome": "Whey",
+      "preco": 120,
+      "descricao": "Whey Protein",
+      "imagem": "https://tse2.mm.bing.net/th/id/OIP.DLKuO0NZWnCl-VkHlrFTqgHaEJ?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3"
     }
   ]
 }
