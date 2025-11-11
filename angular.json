@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/harkword",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -31,6 +32,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://stapani7.github.io/HardWork/",
               "budgets": [
                 {
                   "type": "initial",
@@ -83,11 +85,14 @@
               }
             ],
             "styles": [
-            "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-            "src/styles.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/styles.css"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
