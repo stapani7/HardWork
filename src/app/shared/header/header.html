@@ -1,15 +1,18 @@
 <header class="header">
   <div class="header-container">
-    <a href="#" class="logo">HardWork</a>
+    <a routerLink="/home" class="logo">HardWork</a>
+
     <nav class="nav">
       <ul class="nav-list">
         <li>
-            <div class="cart-icon-container" (click)="abrirCarrinho()">
-                <i class="fas fa-cart-shopping cart-icon"></i>
-                <span class="cart-count">{{ totalProdutos }}</span>
-            </div>
+          <div class="cart-icon-container" (click)="abrirCarrinho()">
+            <i class="fas fa-cart-shopping cart-icon"></i>
+            <span class="cart-count">{{ totalProdutos }}</span>
+          </div>
         </li>
-        <li><button class="logout-btn" (click)="logout()">Sair</button></li>
+        <li>
+          <button class="logout-btn" (click)="logout()">Sair</button>
+        </li>
       </ul>
     </nav>
   </div>

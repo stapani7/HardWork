@@ -51,4 +51,11 @@ export class CartService {
     this.cartItems = [];
     this.cartSubject.next(this.cartItems);
   }
+
+  // remove item pelo index
+  removerItem(index: number) {
+  this.cartItems.splice(index, 1);
+  this.cartSubject.next([...this.cartItems]);
+}
+
 }

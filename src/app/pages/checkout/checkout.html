@@ -5,12 +5,19 @@
     <h2>Resumo do Carrinho</h2>
 
     <div *ngIf="cartItems.length; else vazio">
-      <div class="cart-item" *ngFor="let item of cartItems">
+
+      <div class="cart-item" *ngFor="let item of cartItems; let i = index">
         <img [src]="item.imagem || 'assets/img/placeholder.png'" alt="{{ item.nome }}">
+        
         <div class="cart-item-info">
           <h4>{{ item.nome }}</h4>
           <p>R$ {{ item.preco | number:'1.2-2' }}</p>
         </div>
+
+        <!-- botão de remover -->
+        <button type="button" class="remove-btn" (click)="removerDoCarrinho(i)">
+          Remover
+        </button>
       </div>
 
       <div class="cart-total">

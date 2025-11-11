@@ -45,6 +45,12 @@ export class Checkout implements OnInit {
     });
   }
 
+  removerDoCarrinho(index: number) {
+  this.cartService.removerItem(index);
+  this.totalValor = this.cartService.totalValor(); // pra atualizar o total
+}
+
+
   // Normaliza e valida CEP (só números, 8 dígitos)
   private formatarCep(raw: string): string {
     return (raw || '').replace(/\D/g, '').slice(0, 8);
