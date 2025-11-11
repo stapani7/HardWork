@@ -19,3 +19,6 @@ Próximos passos:
 9. Label/Input relacionados ( linkar )
 
 10. Criar rota para voltar para home ( criar )
+
+
+Final: subir no git pages e testar em diversos dispositivos
