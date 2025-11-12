@@ -1,24 +1,13 @@
 Próximos passos:
 
-1. login fake ( criar tela de cadastro )
+1.  ReactiveForms na tela de login
 
-2. Favicon ( alterar )
+2. Trocar IDS (#) por Class (.) 
 
-3. Tela de cadastro ( criar )
+3. Testes.spec ( remover ou consertar )
 
-4. Trocar IDS (#) por Class (.) ( consertar )
+4. Mostrar "Bem-Vindo usuário" ( criar )
 
-5. Usar app.css ( consertar )
+5. Label/Input relacionados ( linkar )
 
-6. Tirar root onde não usa ( consertar )
-
-7. Testes.spec ( remover ou consertar )
-
-8. Mostrar "Bem-Vindo usuário" ( criar )
-
-9. Label/Input relacionados ( linkar )
-
-10. Criar rota para voltar para home ( criar )
-
-
-Final: subir no git pages e testar em diversos dispositivos
+6. Criar rota para voltar para home ( criar )
